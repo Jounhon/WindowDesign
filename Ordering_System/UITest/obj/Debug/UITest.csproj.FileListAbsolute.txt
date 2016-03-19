@@ -1,0 +1,5 @@
+D:\Dropbox\School\Windows Design\Ordering_System\UITest\bin\Debug\UITest.dll
+D:\Dropbox\School\Windows Design\Ordering_System\UITest\bin\Debug\UITest.pdb
+D:\Dropbox\School\Windows Design\Ordering_System\UITest\obj\Debug\UITest.csprojResolveAssemblyReference.cache
+D:\Dropbox\School\Windows Design\Ordering_System\UITest\obj\Debug\UITest.dll
+D:\Dropbox\School\Windows Design\Ordering_System\UITest\obj\Debug\UITest.pdb

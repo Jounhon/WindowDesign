@@ -1,0 +1,8 @@
+D:\Dropbox\School\Windows Design\DrawAnywhere\DrawAnywhereUnitTest\obj\Debug\DrawAnywhereUnitTest.csprojResolveAssemblyReference.cache
+D:\Dropbox\School\Windows Design\DrawAnywhere\DrawAnywhereUnitTest\bin\Debug\DrawAnywhereUnitTest.dll
+D:\Dropbox\School\Windows Design\DrawAnywhere\DrawAnywhereUnitTest\bin\Debug\DrawAnywhereUnitTest.pdb
+D:\Dropbox\School\Windows Design\DrawAnywhere\DrawAnywhereUnitTest\obj\Debug\DrawAnywhereUnitTest.dll
+D:\Dropbox\School\Windows Design\DrawAnywhere\DrawAnywhereUnitTest\obj\Debug\DrawAnywhereUnitTest.pdb
+D:\Dropbox\School\Windows Design\DrawAnywhere\DrawAnywhereUnitTest\bin\Debug\DrawingModel.dll
+D:\Dropbox\School\Windows Design\DrawAnywhere\DrawAnywhereUnitTest\bin\Debug\DrawingModel.pdb
+D:\Dropbox\School\Windows Design\DrawAnywhere\DrawAnywhereUnitTest\bin\Debug\DrawAnywhereUnitTest.dll.config

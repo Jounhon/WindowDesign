@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B61FF8E-3E99-4AA8-B601-DAA0399068A1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ordering_System</RootNamespace>
+    <AssemblyName>Ordering_System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataGridViewNumericUpDownElements, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\DataGridViewNumericUpDownElements.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\CategoryControl.cs" />
+    <Compile Include="Model\MealControl.cs" />
+    <Compile Include="Model\OrderControl.cs" />
+    <Compile Include="Model\PageControl.cs" />
+    <Compile Include="Model\PresentationBackSideFormModel.cs" />
+    <Compile Include="Model\PresentationFrontSideFormModel.cs" />
+    <Compile Include="Model\Meal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\Order.cs" />
+    <Compile Include="Model\PresentationStartFormModel.cs" />
+    <Compile Include="Model\SystemModel.cs" />
+    <Compile Include="POSCustomerSideForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POSCustomerSideForm.Designer.cs">
+      <DependentUpon>POSCustomerSideForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POSRestaurantSideForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POSRestaurantSideForm.Designer.cs">
+      <DependentUpon>POSRestaurantSideForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartUpForm.Designer.cs">
+      <DependentUpon>StartUpForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="POSCustomerSideForm.resx">
+      <DependentUpon>POSCustomerSideForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POSRestaurantSideForm.resx">
+      <DependentUpon>POSRestaurantSideForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartUpForm.resx">
+      <DependentUpon>StartUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="image\1955-Burger_hero.png" />
+    <Content Include="image\Big-Mac_hero.png" />
+    <Content Include="image\Cheese-Burger_hero.png" />
+    <Content Include="image\Chicken McNuggets_4pcs_hero.png" />
+    <Content Include="image\Chicken-McNuggets 6pcs_hero.png" />
+    <Content Include="image\Double-Cheese-Burger_hero.png" />
+    <Content Include="image\Double-Quarter-Pounder-with-Cheese_hero.png" />
+    <Content Include="image\Grilled-Chicken-Burger_hero.png" />
+    <Content Include="image\Hamburger_hero.png" />
+    <Content Include="image\Mac-Double-Beef-Burger_hero.png" />
+    <Content Include="image\McChicken_hero.png" />
+    <Content Include="image\McCrispy_hero.png" />
+    <Content Include="image\Quarter-Pounder-with-Cheese_hero.png" />
+    <Content Include="image\Spicy-Chicken-Filet-Burger_hero.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

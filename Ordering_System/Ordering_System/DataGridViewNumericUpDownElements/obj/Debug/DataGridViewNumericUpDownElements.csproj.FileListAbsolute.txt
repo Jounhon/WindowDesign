@@ -1,0 +1,4 @@
+D:\Document\Windows Design\Ordering_System\Ordering_System\DataGridViewNumericUpDownElements\bin\Debug\DataGridViewNumericUpDownElements.dll
+D:\Document\Windows Design\Ordering_System\Ordering_System\DataGridViewNumericUpDownElements\bin\Debug\DataGridViewNumericUpDownElements.pdb
+D:\Document\Windows Design\Ordering_System\Ordering_System\DataGridViewNumericUpDownElements\obj\Debug\DataGridViewNumericUpDownElements.dll
+D:\Document\Windows Design\Ordering_System\Ordering_System\DataGridViewNumericUpDownElements\obj\Debug\DataGridViewNumericUpDownElements.pdb

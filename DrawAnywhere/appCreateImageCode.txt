@@ -1,0 +1,86 @@
+        // create image       
+	//async void CreateImage(Canvas canvas)
+        //{
+        //    RenderTargetBitmap bitmap = await CanvasToBitmap(canvas);
+        //    await SaveToPNG(bitmap);  
+        //}
+
+        //// create canvas for image
+        //private Canvas CreateCanvas(double width, double height, double[] minimumPosition, List<Circles> circles)
+        //{
+        //    Canvas canvas = new Canvas();
+        //    canvas.Width = width;
+        //    canvas.Height = height;
+        //    canvas.Background = new SolidColorBrush(Colors.White);
+
+        //    foreach (Circles step in circles)
+        //    {
+        //        Windows.UI.Xaml.Shapes.Ellipse circle = new Windows.UI.Xaml.Shapes.Ellipse();
+        //        circle.Margin = new Windows.UI.Xaml.Thickness(step.PositionX - minimumPosition[0], step.PositionY - minimumPosition[1], step.Radius, step.Radius);
+        //        circle.Width = step.Radius;
+        //        circle.Height = step.Radius;
+        //        circle.Fill = new SolidColorBrush(Colors.LightSkyBlue);
+        //        canvas.Children.Add(circle);
+        //    }
+        //    return canvas;
+        //}
+
+        ///// <summary>  
+        ///// Show Message method  
+        ///// </summary>  
+        ///// <param name="content">Content parameter</param>  
+        ///// <param name="title">Title parameter</param>  
+        //private async void ShowMessage(string content, string title)
+        //{
+        //    MessageDialog message = new MessageDialog(content, title);
+        //    await message.ShowAsync();
+        //}  
+
+        ///// <summary>  
+        ///// Save to PNG method.  
+        ///// </summary>  
+        ///// <param name="bitmap">Bit map parameter</param>  
+        ///// <param name="filename">file name parameter</param>  
+        ///// <returns>Await able .</returns>  
+        //private async Task SaveToPNG(RenderTargetBitmap bitmap)
+        //{
+        //    if (bitmap == null)
+        //        return;
+        //    StorageFile file = await _storagePath.CreateFileAsync(IMAGE_FILE_NAME, Windows.Storage.CreationCollisionOption.ReplaceExisting);
+        //    // Saving to file.  
+        //    using (var stream = await file.OpenStreamForWriteAsync())
+        //    {
+        //        var pixelBuffer = await bitmap.GetPixelsAsync();
+        //        var logicalDpi = DisplayInformation.GetForCurrentView().LogicalDpi;
+        //        // convert stream to IRandomAccessStream  
+        //        var randomAccessStream = stream.AsRandomAccessStream();
+        //        // encoding to PNG  
+        //        var encoder = await BitmapEncoder.CreateAsync(BitmapEncoder.PngEncoderId, randomAccessStream);
+        //        // Finish saving    
+        //        encoder.SetPixelData(BitmapPixelFormat.Bgra8, BitmapAlphaMode.Ignore, (uint)bitmap.PixelWidth, (uint)bitmap.PixelHeight, logicalDpi, logicalDpi, pixelBuffer.ToArray());
+        //        await encoder.FlushAsync();
+        //    }
+        //}
+
+        ///// <summary>  
+        ///// Canvas to BMP method.  
+        ///// </summary>  
+        ///// <returns>Await able returns render target bit map object </returns>  
+        //private async Task<RenderTargetBitmap> CanvasToBitmap(Canvas canvas)
+        //{
+        //    // Initialization  
+        //    RenderTargetBitmap bitmap = null;
+        //    // Initialization.  
+        //    Size canvasSize = canvas.RenderSize;
+        //    Point defaultPoint = canvas.RenderTransformOrigin;
+        //    // Sezing to output image dimension.  
+        //    //canvas.Measure(canvasSize);
+        //    //canvas.UpdateLayout();
+        //    //canvas.Arrange(new Rect(defaultPoint, canvasSize));
+        //    // Convert canvas to bmp.  
+        //    var renderBitmap = new RenderTargetBitmap();
+        //    await renderBitmap.RenderAsync(canvas);
+        //    // Setting.  
+        //    bitmap = renderBitmap as RenderTargetBitmap;
+        //    return bitmap;
+        //} 
